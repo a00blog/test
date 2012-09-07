@@ -2,7 +2,7 @@ MailRegideaCom::Application.routes.draw do
   get "upload/show"
   get "upload/get"
 
-  resources :portfolios
+  resources :portfolios , :except => [:update, :destroy, :new, :edit]
 
   get "pages/home"
   get "pages/contact"
