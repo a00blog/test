@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b> Название :</b>
+  <%= @portfolio.title %>
+</p>
+
+<p>
+  <b> Описание контента:</b>
+  <%= @portfolio.title_o %>
+</p>
+	<div id="">
+
+<div id="gallery">  <a href="/assets/<%= @portfolio.image_url_pr %>"> 
+  <%= image_tag( @portfolio.image_url_pr ,height: "200", widght: "200" ) %> </a>
+</div>
+</div>
+
+<%= link_to 'Вернуться назад', portfolios_path %>

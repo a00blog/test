@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Green Field Theme - Free CSS Template</title>
+ <%= csrf_meta_tags %>
+     <%= render 'layouts/stylesheets' %>
+
+<script type="text/javascript">
+
+	$(function() {
+
+		$('#container-4').tabs({ fxFade: true, fxSpeed: 'slow' });
+
+	});
+</script>
+
+<style type="text/css" media="screen, projection">
+	#templatemo_middle {
+		overflow: hidden;
+		width: 960px;
+		height: 320px;
+		background: url(/assets/templatemo_middle.jpg) no-repeat
+	}
+</style>
+
+</head>
+<body>
+
+<div id="templatemo_body_wrapper">
+   <div id="templatemo_wrapper">
+
+    <%= render 'layouts/header' %> 
+ 
+
+    <%= render 'layouts/pakets' %>
+
+    <div id="templatemo_main_base">
+    <div id="templatemo_main">
+    	
+        <div class="content_box">
+ <%= yield %>
+
+          <div class="col_w410">
+                <h2>Welcome to Green Field</h2>
+                 <img class="image_fl" src="/assets/icon_01.png" alt="image" />
+                <p><em> <a href="http://www.templatemo.com/page/1" target="_parent">Free CSS Templates</a> are provided by <a href="http://www.templatemo.com" target="_parent">templatemo.com</a> for everyone. Feel free to use this template for any website.  Credit goes to <a href="http://www.photovaco.com/" target="_blank">Free Photos</a> for photos.</em> <em>You may validate <a href="http://validator.w3.org/check?uri=referer">XHTML</a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> for this page.</em></p>
+            <p>Lorem ipsum dolor sit amet, consectetur elit. Etiam non diam nec nisl ultrices non in eros. Aenean eu lectus vel nulla congue. <a href="#" class="more">More</a></p>
+          </div>
+        
+            <div class="col_w410 last_col">
+                <h2>Testimonial</h2>
+                <blockquote>
+                    <p class="testimonial">Ut commodo, nulla eu pellentesque mollis, odio ante condimen tum augue, eget facilisis dui magna ut ligula. </p>
+                    
+                  <cite>David - <span> Web Designer</span></cite>                </blockquote>
+                
+                <a href="#" class="more float_r">More</a>
+            </div>
+            <div class="cleaner"></div>
+        </div>
+        
+        <div class="content_box">
+            <div class="col_w410">
+                <h3> Latest  Posts</h3>
+    <div class="hp_news_box">
+                	<p class="date">November 30, 2048</p>
+                	<h5>Morbi Nisl Ipsum</h5>
+                    <p>Etiam non diam nec nisl ultrices pulvinar non in eros. Aenean eu lectus vel nulla auctor congue. <a href="#" class="more">More</a></p>
+				</div>
+                <div class="hp_news_box last_box">
+                	<p class="date">October 26, 2048</p>
+                	<h5>Pellentesque Fermentum Feugiat</h5>
+                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras porta euismod dapibus. <a href="#" class="more">More</a></p>
+				</div>
+            </div>
+    
+      <div class="col_w410 last_col">
+                <h3> Featured Projects</h3>
+      <div class="hp_latest_projects_box">
+                    <img class="image_wrapper image_fl" src="images/templatemo_image_02.jpg" alt="image" />
+                    <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</em></p>
+                    <p>Etiam non diam nec nisl ultrices pulvinar non in eros nulla auctor congue. <a href="#" class="more">More</a></p>
+				</div>
+                    
+            <div class="hp_latest_projects_box last_box">
+                    <img class="image_wrapper image_fl" src="images/templatemo_image_03.jpg" alt="image" />
+              <p><em>Nunc id tincidunt odio. Nunc a neque augue, ut fringilla ligula.</em></p>
+                <p> Aenean eu lectus vel nulla auctor congue nec nisl ultrices non in eros. <a href="#" class="more">More</a></p>
+			  </div>
+            </div>
+            <div class="cleaner"></div>
+        </div>
+    
+    </div>    
+    </div>	<!-- end of main_base -->
+    <div id="templatemo_main_bottom"></div>
+<%= render 'layouts/footer' %>    
+	
+    <div class="cleaner"></div>
+</div> <!-- end of wrapper -->
+</div> <!-- end of body_wrapper -->
+
+</body>
+</html>

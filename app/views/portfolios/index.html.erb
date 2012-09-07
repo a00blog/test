@@ -1,0 +1,20 @@
+
+<div>  Портфолио</div>
+
+<table>
+
+<% @portfolios.each do |portfolio| %>
+  <tr collspan="2">
+    <td><%= portfolio.title %></td> </tr>
+   <tr>
+    <td><%= portfolio.title_o %></td>
+    <td><%= image_tag(portfolio.image_url) %></td>
+    </tr>
+<tr>    <td><%= link_to 'Показать', portfolio %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<p> <%= will_paginate @portfolios  %></p> 
